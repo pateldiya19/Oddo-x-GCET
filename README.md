@@ -294,5 +294,5 @@ For issues and questions:
 
 ---
 
-Built with ❤️ using React, Node.js, TypeScript, and MongoDB
 #
+
