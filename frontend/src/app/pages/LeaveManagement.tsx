@@ -78,7 +78,6 @@ export default function LeaveManagement() {
         setStartDate('');
         setEndDate('');
         setReason('');
-        // Refresh leave requests
         fetchLeaveRequests();
       } else {
         // Handle validation errors from backend
