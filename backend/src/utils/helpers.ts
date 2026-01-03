@@ -1,7 +1,7 @@
 export const calculateWorkHours = (checkIn: Date, checkOut: Date): number => {
   const diffMs = checkOut.getTime() - checkIn.getTime();
   const diffHours = diffMs / (1000 * 60 * 60);
-  return Math.round(diffHours * 10) / 10; // Round to 1 decimal place
+  return Math.round(diffHours * 10) / 10;
 };
 
 export const calculateLeaveDays = (startDate: Date, endDate: Date): number => {
