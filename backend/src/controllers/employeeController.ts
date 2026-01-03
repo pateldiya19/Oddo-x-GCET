@@ -149,8 +149,7 @@ export const deleteEmployee = async (req: AuthRequest, res: Response, next: Next
     if (!employee) {
       throw new AppError('Employee not found', 404);
     }
-
-    // Soft delete by setting status to inactive
+    
     employee.status = 'inactive';
     await employee.save();
 
