@@ -84,7 +84,6 @@ const leaveSchema = new Schema<ILeave>(
   }
 );
 
-// Index for faster queries
 leaveSchema.index({ userId: 1, status: 1 });
 leaveSchema.index({ employeeId: 1, status: 1 });
 leaveSchema.index({ startDate: 1, endDate: 1 });
