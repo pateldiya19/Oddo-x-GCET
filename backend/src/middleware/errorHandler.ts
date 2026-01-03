@@ -40,7 +40,6 @@ export const errorHandler = (
         message: err.message,
       });
     } else {
-      // Programming or unknown error: don't leak details
       res.status(500).json({
         success: false,
         status: 'error',
